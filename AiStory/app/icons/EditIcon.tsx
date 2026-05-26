@@ -1,0 +1,16 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+import { useColorScheme } from "nativewind";
+import { Path, Svg } from "react-native-svg";
+
+export default function EditIcon() {
+
+    const { colorScheme } = useColorScheme();
+
+    return (
+        <Svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <Path d="M14.2141 2.98239L15.6158 1.58063C16.39 0.806458 17.6452 0.806458 18.4194 1.58063C19.1935 2.3548 19.1935 3.60998 18.4194 4.38415L17.0176 5.78591M14.2141 2.98239L8.9802 8.2163C7.93493 9.2616 7.41226 9.7842 7.05637 10.4211C6.70047 11.058 6.3424 12.5619 6 14C7.43809 13.6576 8.942 13.2995 9.5789 12.9436C10.2158 12.5877 10.7384 12.0651 11.7837 11.0198L17.0176 5.78591M14.2141 2.98239L17.0176 5.78591" stroke={colorScheme === 'light' ? "#01020A" : '#fff'} strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <Path d="M19 10C19 14.2426 19 16.364 17.682 17.682C16.364 19 14.2426 19 10 19C5.75736 19 3.63604 19 2.31802 17.682C1 16.364 1 14.2426 1 10C1 5.75736 1 3.63604 2.31802 2.31802C3.63604 1 5.75736 1 10 1" stroke={colorScheme === 'light' ? "#01020A" : '#fff'} strokeWidth="1.5" stroke-linecap="round" />
+        </Svg>
+    );
+}

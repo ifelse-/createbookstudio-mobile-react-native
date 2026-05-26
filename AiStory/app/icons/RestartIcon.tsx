@@ -1,0 +1,16 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+import { useColorScheme } from "nativewind";
+import { Path, Svg } from "react-native-svg";
+
+export default function RestartIcon() {
+
+    const { colorScheme } = useColorScheme();
+
+    return (
+        <Svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <Path d="M15.3884 1L16.3913 1.97574C16.8393 2.41165 17.0633 2.62961 16.9844 2.81481C16.9056 3 16.5888 3 15.9552 3H8.19422C4.22096 3 1 6.13401 1 10C1 11.4872 1.47668 12.8662 2.2895 14" stroke={colorScheme === 'light' ? "#01020A" : '#fff'} strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" />
+            <Path d="M6.61156 19L5.60875 18.0243C5.16074 17.5883 4.93673 17.3704 5.01557 17.1852C5.09441 17 5.4112 17 6.04478 17H13.8058C17.779 17 21 13.866 21 10C21 8.5128 20.5233 7.13383 19.7105 6" stroke={colorScheme === 'light' ? "#01020A" : '#fff'} strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" />
+        </Svg>
+    );
+}

@@ -1,0 +1,16 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+import { useColorScheme } from "nativewind";
+import { Path, Svg } from "react-native-svg";
+
+export default function SubscriptionIcon() {
+
+    const { colorScheme } = useColorScheme();
+
+    return (
+        <Svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <Path d="M1 10.5C1 6.02166 1 3.78249 2.39124 2.39124C3.78249 1 6.02166 1 10.5 1C14.9783 1 17.2175 1 18.6088 2.39124C20 3.78249 20 6.02166 20 10.5C20 14.9783 20 17.2175 18.6088 18.6088C17.2175 20 14.9783 20 10.5 20C6.02166 20 3.78249 20 2.39124 18.6088C1 17.2175 1 14.9783 1 10.5Z" stroke={colorScheme === 'light' ? "#01020A" : '#fff'} strokeWidth="1.5" stroke-linejoin="round" />
+            <Path d="M11.3638 6.22209L12.2437 7.99644C12.3637 8.24344 12.6837 8.48035 12.9536 8.5257L14.5485 8.7929C15.5684 8.9643 15.8083 9.7103 15.0734 10.4462L13.8335 11.6964C13.6236 11.9081 13.5086 12.3164 13.5736 12.6087L13.9285 14.1562C14.2085 15.3812 13.5636 15.855 12.4887 15.2148L10.9939 14.3226C10.7239 14.1613 10.2789 14.1613 10.004 14.3226L8.50913 15.2148C7.43925 15.855 6.78932 15.3761 7.06929 14.1562L7.42425 12.6087C7.48925 12.3164 7.37426 11.9081 7.16428 11.6964L5.92442 10.4462C5.1945 9.7103 5.42947 8.9643 6.44936 8.7929L8.04419 8.5257C8.30916 8.48035 8.62912 8.24344 8.74911 7.99644L9.629 6.22209C10.109 5.2593 10.8889 5.2593 11.3638 6.22209Z" stroke={colorScheme === 'light' ? "#01020A" : '#fff'} strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </Svg>
+    );
+}
